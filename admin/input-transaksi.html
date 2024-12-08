@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Transaksi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, select {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Input Transaksi Baru</h1>
+        <form action="proses-transaksi.php" method="POST">
+            <label for="id_admin">ID Admin:</label>
+            <input type="number" id="id_admin" name="id_admin" required>
+
+            <label for="id_kamar">ID Kamar:</label>
+            <input type="number" id="id_kamar" name="id_kamar" required>
+
+            <label for="jumlah_orang">Jumlah Orang:</label>
+            <input type="number" id="jumlah_orang" name="jumlah_orang" required>
+
+            <label for="nama_pelanggan">Nama Pelanggan:</label>
+            <input type="text" id="nama_pelanggan" name="nama_pelanggan" required>
+
+            <label for="no_telepon">No Telepon:</label>
+            <input type="number" id="no_telepon" name="no_telepon" required>
+
+            <label for="alamat_pelanggan">Alamat Pelanggan:</label>
+            <input type="text" id="alamat_pelanggan" name="alamat_pelanggan" required>
+
+            <label for="no_kamar">No Kamar:</label>
+            <input type="number" id="no_kamar" name="no_kamar" required>
+
+            <label for="jam_checkin">Jam Checkin:</label>
+            <input type="time" id="jam_checkin" name="jam_checkin" required>
+
+            <label for="harga">Harga (Rp):</label>
+            <input type="number" id="harga" name="harga" required>
+
+            <label for="keterangan">Keterangan:</label>
+            <select id="keterangan" name="keterangan" required>
+                <option value="lunas">Lunas</option>
+                <option value="tidak lunas">Tidak Lunas</option>
+            </select>
+
+            <label for="nama_staf">Nama Staf:</label>
+            <input type="text" id="nama_staf" name="nama_staf" required>
+
+            <input type="submit" value="Simpan Transaksi">
+        </form>
+    </div>
+
+</body>
+</html>

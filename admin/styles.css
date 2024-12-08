@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-logo {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 70px; /* Below header */
+    left: 0;
+    width: 220px;
+    height: calc(100vh - 70px); /* Full height minus header */
+    background-color: #444;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+    padding-left: 20px; /* Indent the text slightly on hover */
+}
+
+/* Active menu item (for current page) */
+.sidebar ul li a.active {
+    background-color: #0066cc;
+    color: white;
+    padding-left: 20px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px; /* Sidebar width + some padding */
+    padding: 20px;
+    flex: 1;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: #e2e2e2;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Links */
+a {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #444;
+    }
+
+    .sidebar ul li {
+        margin: 0;
+        flex: 1;
+    }
+
+    .sidebar ul li a {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+
+    .sidebar ul li a:hover {
+        padding-left: 0;
+    }
+
+    footer {
+        position: static;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* CSS untuk membuat tabel bisa di-scroll */
+.table-wrapper {
+    max-height: 400px; /* Tentukan tinggi maksimum tabel */
+    overflow-y: auto;  /* Tambahkan scroll secara vertikal */
+    overflow-x: auto;  /* Tambahkan scroll secara horizontal jika diperlukan */
+    margin-top: 20px;
+    border: 1px solid #ddd; /* Tambahkan border untuk kejelasan */
+}
+
+#transactionTable th, #transactionTable td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#transactionTable th {
+    background-color: #f8f9fa;
+    position: sticky; /* Sticky header untuk membuat header tetap terlihat saat scroll */
+    top: 0;
+}
+
+#transactionTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
