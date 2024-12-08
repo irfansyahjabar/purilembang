@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Seaplace Hotel - Pembayaran</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Styling for sticky navbar */
+    .main_menu {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Styling for card */
+    .card {
+      margin: 20px auto; /* Menjaga card di tengah */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px; /* Penambahan padding */
+      max-width: 500px; /* Ukuran maksimum card lebih besar */
+      /* Menghapus efek hover */
+      transition: none; /* Menghilangkan transisi */
+    }
+    .card-title {
+      text-align: center; /* Judul card di tengah */
+    }
+  </style>
+</head>
+<body>
+  <!-- ================ header section start ================= -->	
+  <header class="header_area">
+    <div class="header-top">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div id="logo">
+            <a href="index.html"><img src="img/Logo.png" alt="" title="" /></a>
+          </div>
+          <div class="ml-auto d-none d-md-block d-md-flex">
+            <div class="media header-top-info">
+              <span class="header-top-info__icon"><i class="fas fa-phone-volume"></i></span>
+              <div class="media-body">
+                <p>Have any question?</p>
+                <p>Free: <a href="tel:+12 365 5233">+12 365 5233</a></p>
+              </div>
+            </div>
+            <div class="media header-top-info">
+              <span class="header-top-info__icon"><i class="ti-email"></i></span>
+              <div class="media-body">
+                <p>Have any question?</p>
+                <p>Free: <a href="tel:+12 365 5233">+12 365 5233</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_menu mb-4"> <!-- Menambahkan kelas mb-4 di sini -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <!-- Menu lainnya dihilangkan -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- ================ header section end ================= -->	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <!-- ================ Transaksi Pembayaran Section ================= -->
+  <div class="card" style="padding: 20px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <div class="form-group">
+      <h5 class="card-title">Form Pembayaran</h5>
+      <label>Nama :</label>
+  </div>
+  <div class="form-group">
+      <label>No Telepon :</label>
+  </div>
+  <div class="form-group">
+      <label>Email :</label>
+  </div>
+  <div class="form-group">
+      <label>Total : </label>
+  </div>
+  
+  <!-- Card Bank BRI -->
+  <div class="card" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-top: 20px; width: calc(100% - 20px);">
+      <h5 style="text-align: center; color: #007bff;">Bank BRI</h5>
+      <p style="text-align: center;">1234567890</p>
+  </div>
+  
+  <!-- Card Bank BNI -->
+  <div class="card" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-top: 20px; width: calc(100% - 20px);">
+      <h5 style="text-align: center; color: #007bff;">Bank BNI</h5>
+      <p style="text-align: center;">1234567890</p>
+  </div>
+  <div class="form-group">
+    <label for="photo">Bukti Transaksi</label>
+    <input type="file" class="form-control" id="photo" name="photo" accept="image/*" required>
+  </div>
+  
+  <div class="button-container" style="margin-top: 20px;">
+      <a class="button button--active home-banner-btn" href="sukses.html" style="display: inline-block; width: 100%; padding: 10px; background-color: #007bff; color: white; text-align: center; border: none; border-radius: 5px; font-size: 16px; text-decoration: none; transition: background-color 0.3s;">
+          Bayar Sekarang
+      </a>
+  </div>  
+  <!-- ================ End footer Area ================= -->
+
+</body>
+</html>
